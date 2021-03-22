@@ -12,13 +12,22 @@
   --grid-item: 2;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: var(--text-font);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-transform: capitalize;
   color: var(--text-color);
   background-color: var(--primary-bcg-color);
 }
