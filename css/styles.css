@@ -6,7 +6,7 @@
   --accent-color: #2196f3;
   --primary-bcg-color: #ffffff;
   --secondary-bcg-color: #2f303a;
-  --add-bgc-color: #f5f4fa;
+  --add-bcg-color: #f5f4fa;
   --text-font: 'Roboto', sans-serif;
   --accent-font: 'Raleway', sans-serif;
   --grid-gap: 30px;
@@ -176,18 +176,19 @@ img {
 
 /* -----------------HERO------------------- */
 .hero {
+  max-width: 1600px;
+  /* height: 600px; */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-bcg-color);
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to right, rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)),
+    url('../images/hero-bg.jpg');
+
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-
-  background-color: var(--secondary-bcg-color);
-  background-image: linear-gradient(to right, rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(../images/hero-img.jpg);
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-position: center;
 }
 
 .hero-title {
@@ -237,8 +238,8 @@ img {
 .feature-list-item {
   flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
   --grid-item: 4;
-  margin-right: var(--grid-gap);
-  margin-bottom: var(--grid-gap);
+  margin-left: var(--grid-gap);
+  margin-top: var(--grid-gap);
 }
 
 .feature-list-item::before {
@@ -246,25 +247,25 @@ img {
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--add-bgc-color);
+  background-color: var(--add-bcg-color);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .icon-antenna::before {
-  background-image: url(../images/icons/antenna.svg);
+  background-image: url('../images/icons/antenna.svg');
 }
 
 .icon-clock::before {
-  background-image: url(../images/icons/clock.svg);
+  background-image: url('../images/icons/clock.svg');
 }
 
 .icon-diagram::before {
-  background-image: url(../images/icons/diagram.svg);
+  background-image: url('../images/icons/diagram.svg');
 }
 
 .icon-astronaut::before {
-  background-image: url(../images/icons/astronaut.svg);
+  background-image: url('../images/icons/astronaut.svg');
 }
 
 .feature-item-title {
@@ -285,35 +286,35 @@ img {
 
 .services-list {
   display: flex;
-  margin-right: calc(-1 * var(--grid-gap));
-  margin-bottom: calc(-1 * var(--grid-gap));
+  margin-left: calc(-1 * var(--grid-gap));
+  margin-top: calc(-1 * var(--grid-gap));
 }
 
 .services-list-item {
   flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
   --grid-item: 3;
-  margin-right: var(--grid-gap);
-  margin-bottom: var(--grid-gap);
+  margin-left: var(--grid-gap);
+  margin-top: var(--grid-gap);
 }
 /* ---------------END SERVICES----------- */
 
 /* -----------------TEAM---------------- */
 
 .team.section {
-  background: var(--add-bgc-color);
+  background: var(--add-bcg-color);
 }
 
 .team-list {
   display: flex;
-  margin-right: calc(-1 * var(--grid-gap));
-  margin-bottom: calc(-1 * var(--grid-gap));
+  margin-left: calc(-1 * var(--grid-gap));
+  margin-top: calc(-1 * var(--grid-gap));
 }
 
 .team-list-item {
   flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
   --grid-item: 4;
-  margin-right: var(--grid-gap);
-  margin-bottom: var(--grid-gap);
+  margin-left: var(--grid-gap);
+  margin-top: var(--grid-gap);
 
   text-align: center;
 }
@@ -391,7 +392,7 @@ img {
   font-size: 16px;
   line-height: 1.63;
   color: var(--title-color);
-  background-color: #f5f4fa;
+  background-color: var(--add-bcg-color);
   cursor: pointer;
 }
 
@@ -405,21 +406,21 @@ img {
 .project-set {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--grid-gap));
-  margin-bottom: calc(-1 * var(--grid-gap));
+  margin-left: calc(-1 * var(--grid-gap));
+  margin-top: calc(-1 * var(--grid-gap));
 }
 
 .project-set-item {
   flex-basis: calc((100% - var(--grid-item) * var(--grid-gap)) / var(--grid-item));
   --grid-item: 3;
-  margin-right: var(--grid-gap);
-  margin-bottom: var(--grid-gap);
+  margin-left: var(--grid-gap);
+  margin-top: var(--grid-gap);
 
   /* border-bottom: 1px solid #eeeeee; */
 }
 
 .project-set-content {
-  padding: 20px 24px;
+  padding: 20px 23px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
