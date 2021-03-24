@@ -1,4 +1,4 @@
-/* ----------STYLES FOR INDEX.HTML------------ */
+/* ---STYLES FOR INDEX.HTML--- */
 
 :root {
   --text-color: #757575;
@@ -75,7 +75,7 @@ img {
   overflow: hidden;
 }
 
-/* --------------COMPONENTS----------- */
+/* ---COMPONENTS--- */
 .container {
   width: 1200px;
   margin-right: auto;
@@ -97,9 +97,9 @@ img {
   text-align: center;
   color: var(--title-color);
 }
-/* ------------END COMPONENTS------------ */
+/* ---END COMPONENTS--- */
 
-/* ------------HEADER--------------*/
+/* ---HEADER---*/
 .header {
   border-bottom: 1px solid #ececec;
 
@@ -172,23 +172,22 @@ img {
 .nav-link.current {
   color: var(--accent-color);
 }
-/* -----------------END HEADER------------- */
+/* ---END HEADER--- */
 
-/* -----------------HERO------------------- */
+/* ---HERO--- */
 .hero {
   max-width: 1600px;
-  /* height: 600px; */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+
   background-color: var(--secondary-bcg-color);
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(to right, rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)),
     url('../images/hero-bg.jpg');
-
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
 }
 
 .hero-title {
@@ -226,13 +225,13 @@ img {
   background-color: #188ce8;
   outline: none;
 }
-/* ---------------END HERO--------------- */
+/* ---END HERO--- */
 
-/* ---------------FEATURE--------------- */
+/* ---FEATURE--- */
 .feature-list {
   display: flex;
-  margin-right: calc(-1 * var(--grid-gap));
-  margin-bottom: calc(-1 * var(--grid-gap));
+  margin-left: calc(-1 * var(--grid-gap));
+  margin-top: calc(-1 * var(--grid-gap));
 }
 
 .feature-list-item {
@@ -276,9 +275,9 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
 }
-/* ----------------END FEATURE-------------- */
+/* ---END FEATURE--- */
 
-/* -----------------SERVICES---------------- */
+/* ---SERVICES--- */
 
 .services.section {
   padding-top: 0;
@@ -296,9 +295,9 @@ img {
   margin-left: var(--grid-gap);
   margin-top: var(--grid-gap);
 }
-/* ---------------END SERVICES----------- */
+/* ---END SERVICES--- */
 
-/* -----------------TEAM---------------- */
+/* ---TEAM--- */
 
 .team.section {
   background: var(--add-bcg-color);
@@ -336,9 +335,9 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
-/* -----------END TEAM---------------- */
+/* ---END TEAM--- */
 
-/* ---------------FOOTER----------- */
+/* ---FOOTER--- */
 
 .footer {
   padding-top: 60px;
@@ -368,10 +367,10 @@ img {
 .contacts-footer-link {
   color: rgba(255, 255, 255, 0.6);
 }
-/* -----------END FOOTER--------------- */
+/* ---END FOOTER--- */
 
-/* -------STYLES FOR PORTFOLIO.HTML------ */
-/* ------------PROJECT SET -------------- */
+/* ---STYLES FOR PORTFOLIO.HTML--- */
+/* ---PROJECT SET--- */
 .project-filter {
   display: flex;
   justify-content: center;
@@ -415,12 +414,10 @@ img {
   --grid-item: 3;
   margin-left: var(--grid-gap);
   margin-top: var(--grid-gap);
-
-  /* border-bottom: 1px solid #eeeeee; */
 }
 
 .project-set-content {
-  padding: 20px 23px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
@@ -442,4 +439,4 @@ img {
 .footer-content {
   min-width: 230px;
 }
-/* -----------END PROJECT SET----------- */
+/* ---END PROJECT SET--- */
