@@ -7,6 +7,7 @@
   --primary-bcg-color: #ffffff;
   --secondary-bcg-color: #2f303a;
   --add-bcg-color: #f5f4fa;
+  --icon-color: #afb1b8;
   --text-font: 'Roboto', sans-serif;
   --accent-font: 'Raleway', sans-serif;
   --grid-gap: 30px;
@@ -148,16 +149,18 @@ img {
 }
 
 .nav-link {
-  display: block;
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-color);
 }
 
 .contacts-header-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-item:not(:last-child),
@@ -171,6 +174,27 @@ img {
 .contacts-header-link:focus,
 .nav-link.current {
   color: var(--accent-color);
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-tel:hover,
+.icon-tel:focus,
+.icon-mail:hover,
+.icon-mail:focus {
+  fill: var(--accent-color);
 }
 /* ---END HEADER--- */
 
@@ -241,7 +265,22 @@ img {
   margin-top: var(--grid-gap);
 }
 
-.feature-list-item::before {
+.feature-block {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--add-bcg-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* .feature-list-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -249,9 +288,9 @@ img {
   background-color: var(--add-bcg-color);
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
-.icon-antenna::before {
+/* .icon-antenna::before {
   background-image: url('../images/icons/antenna.svg');
 }
 
@@ -265,7 +304,7 @@ img {
 
 .icon-astronaut::before {
   background-image: url('../images/icons/astronaut.svg');
-}
+} */
 
 .feature-item-title {
   margin-bottom: 10px;
@@ -319,7 +358,7 @@ img {
 }
 
 .team-list-item-content {
-  padding: 30px 30px;
+  padding: 32px 30px;
 }
 
 .team-item-name {
@@ -334,8 +373,81 @@ img {
 .team-item-position {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #ffffff;
 }
 /* ---END TEAM--- */
+
+/* ---CLIENTS--- */
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: transparent; */
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+/* .client-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+} */
+
+.client-list-link:hover,
+.client-list-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client-icon {
+  fill: var(--icon-color);
+}
+
+.client-list-link:hover .client-icon,
+.client-list-link:hover .client-icon {
+  fill: var(--accent-color);
+}
+/* ---END CLIENTS--- */
 
 /* ---FOOTER--- */
 
@@ -345,8 +457,14 @@ img {
   background-color: var(--secondary-bcg-color);
 }
 
-.footer-content {
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-content-block {
   margin-top: 20px;
+  margin-right: 70px;
 }
 
 .logo-part-light {
@@ -367,6 +485,43 @@ img {
 .contacts-footer-link {
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* .footer-social-block {
+  margin-left: 70px;
+} */
+
+.footer-subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.42;
+  text-transform: uppercase;
+  color: var(--primary-bcg-color);
+}
+
+.footer .social-list {
+  display: flex;
+  min-width: 206px;
+}
+
+/* .footer .socail-list-link:not(:nth-last-child(4)) {
+  margin-right: 10px;
+} */
+
+.footer .social-list-icon {
+  fill: var(--primary-bcg-color);
+}
+
+.footer .social-list-link {
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
 /* ---END FOOTER--- */
 
 /* ---STYLES FOR PORTFOLIO.HTML--- */
