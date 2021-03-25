@@ -67,7 +67,7 @@ img {
 
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
@@ -261,7 +261,6 @@ img {
 .hero-btn:focus,
 .hero-btn:hover {
   background-color: #188ce8;
-  outline: 1 px solid currentColor;
 }
 /* ---END HERO--- */
 
