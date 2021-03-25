@@ -1,4 +1,4 @@
-/* ---STYLES FOR INDEX.HTML--- */
+/* ---Styles for index.html--- */
 
 :root {
   --text-color: #757575;
@@ -98,6 +98,36 @@ img {
   text-align: center;
   color: var(--title-color);
 }
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--primary-bcg-color);
+}
 /* ---END COMPONENTS--- */
 
 /* ---HEADER---*/
@@ -179,13 +209,6 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.icon-tel:hover,
-.icon-tel:focus,
-.icon-mail:hover,
-.icon-mail:focus {
-  fill: var(--accent-color);
-}
 /* ---END HEADER--- */
 
 /* ---HERO--- */
@@ -238,7 +261,7 @@ img {
 .hero-btn:focus,
 .hero-btn:hover {
   background-color: #188ce8;
-  outline: none;
+  outline: 1 px solid currentColor;
 }
 /* ---END HERO--- */
 
@@ -273,7 +296,6 @@ img {
 
 .feature-item-title {
   margin-bottom: 10px;
-
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -340,36 +362,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
-
-.social-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-list-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.social-list-icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--icon-color);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--primary-bcg-color);
-}
 /* ---END TEAM--- */
 
 /* ---CLIENTS--- */
@@ -398,7 +390,7 @@ img {
 }
 
 .client-list-link:hover .client-icon,
-.client-list-link:hover .client-icon {
+.client-list-link:focus .client-icon {
   fill: var(--accent-color);
 }
 /* ---END CLIENTS--- */
@@ -443,13 +435,12 @@ img {
   margin-bottom: 20px;
 
   font-weight: 700;
-  line-height: 1.42;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-bcg-color);
 }
 
 .footer .social-list {
-  display: flex;
   min-width: 206px;
 }
 
@@ -457,17 +448,12 @@ img {
   fill: var(--primary-bcg-color);
 }
 
-.footer .social-list-link {
+.social-list-link {
   background-color: rgb(255, 255, 255, 0.1);
-}
-
-.footer .social-list-link:hover,
-.footer .social-list-link:focus {
-  background-color: var(--accent-color);
 }
 /* ---END FOOTER--- */
 
-/* ---STYLES FOR PORTFOLIO.HTML--- */
+/* ---Styles for Portfolio.html-- */
 /* ---PROJECT SET--- */
 .project-filter {
   display: flex;
